@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 
+<script>
+$(document).ready(function{
+	$(".dropdown-toggle").click(function{
+		$("active").show();
+	});
+	$(".navbar-toggler").click(function{
+		$("active").show();
+		$(".nav").addClass("nav");
+	});
+});
+
+</script>
+<style >
+	.nav{
+		height: 700px;
+	}
+</style> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles sheet -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    
+  
+    <title>DATA STRUCTURES</title>
+</head>
+<body class="container-fluid col-lg-12 col-sm-12 col-xm-12" style="background-color: #fcfcfc">
+  
+  
+
+	<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CSC 2100 |  HOME</a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">CSC 2100 |  HOME<span class="sr-only">(current)</span></a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Datastructures
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Arrays</a></li>
+              <li><a href="#">Queues</a></li>
+              <li><a href="#">Stacks</a></li>
+              <li><a href="#">Lists</a></li>
+              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="algorithm.html">Algorithm analysis</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="recursion.html">Recursion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="induction.html">Induction</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More data structures
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Linked Lists</a></li>
+              <li><a href="#">Priority Queue</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sorting
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Merge Sort</a></li>
+              <li><a href="#">Quick Sort</a></li>
+              <li><a href="#">Bubble Sort</a></li>
+              <li><a href="#">Insertion Sort</a></li>
+              <li><a href="#">Selection Sort</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Searching
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Binary Search</a></li>
+              <li><a href="#">Linear Search</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    <div class="container-fluid">
+	    <div class="row">
+	      	<div class="col-sm-1"></div>
+	      	<div class="col-sm-10">
+	      		<h1>Induction</h1>
+
+				<div>
+					<p>Mathematical Induction. is a mathematical technique which is used to prove a statement, a formula or a theorem is true for every natural number.</p>
+					<p>
+						Taking advantage of this, natural numbers can be proven to have certain properties as follows: <br>
+						First it is proven that the basis element, that is 0, has the property in question (basis step). You prove that the seeds (the first generation elements) have the property. 
+						<br>
+						Then it is proven that if an arbitrary natural number, denote it by <b>n</b>, has the property in question, then the next element, that is <b>n + 1</b>, has that property (inductive step). Here you prove that the property is inherited from one generation <b>(n)</b> to the next generation <b>(n + 1)</b>. 
+					</p>
+					<p>
+						When these two are proven, then it follows that all the natural numbers have that property. For since 0 has the property by the basis step, the element next to it, which is 1, has the same property by the inductive step. Then since 1 has the property, the element next to it, which is 2, has the same property again by the inductive step. Proceeding likewise, any natural number can be shown to have the property. This process is somewhat analogous to the knocking over a row of dominos with knocking over the first domino corresponding to the basis step. 
+						<br>
+						More generally mathematical statements involving a natural number <b>n</b> such as <b>1 + 2 + ... + n = n( n + 1 )/2</b> can be proven by mathematical induction by the same token. 
+					</p>
+
+					To prove that a statement <b><em>P(n)</em></b> is true for all natural number,<b>n</b> &gt;=<b>n<sub>o</sub></b>  where  <b>n<sub>o</sub></b> is a natural number, we proceed as follows: 
+					<br>
+					<ul>
+					<li><b>Basis Step: </b> Prove that <b>P( n<sub>o</sub> )</b> is true. 
+					<li><b>Inductive step: </b> Prove that for any integer <b><i>k</i></b> &gt;= <b>n<sub>o</sub></b> , if <b><i>P(k)</i></b> is true (called induction hypothesis), then <b><i>P(k+1)</i></b> is true.
+					</ul> 
+					The first principle of mathematical induction states that if the basis step and the inductive step are proven, then <b><i>P(n)</i></b> is true for all natural number <b>n<sub>o</sub></b> . 
+
+					As a first step for proof by induction,   it is often a good idea to restate <b><i>P(k+1)</i></b> in terms of <b><i>P(k)</i></b> so that <b><i>P(k)</i></b>, which is assumed to be true, can be used. 
+					<br>
+					<h5>Example:</h5>
+					<br>
+					      Prove that for any natural number <b>n</b>,  <b><i> 0 + 1 + ... + n = n( n + 1 )/2 </i></b>. 
+					<br>
+					<b>Proof:</b>
+					<ul> 
+						Basis Step: If <b>n = 0</b>, then <b>LHS = 0</b>, and <b>RHS = 0 * (0 + 1) = 0</b> .
+						<br>
+						Hence <b><i>LHS = RHS</i></b>. 
+						<br>
+						Induction: Assume that for an arbitrary natural number <b><i>n, 0 + 1 + ... + n = n( n + 1 )/2 </i></b>. -------- Induction Hypothesis
+					</ul>
+						&nbsp;&nbsp;
+						To prove this for <b><i>n+1</i></b>, first try to express <b><i>LHS</i></b> for <b><i>n+1</i></b> in terms of <b><i>LHS</i></b> for <b><i>n</i></b>, and somehow use the induction hypothesis. 
+						<br>
+						Here let us try &nbsp;&nbsp;&nbsp;
+					    <br>
+					    <b><i>  LHS</i></b> for <b><i> n + 1 = 0 + 1 + ... + n + (n + 1) = (0 + 1 + ... + n) + (n + 1) </i></b>.
+					    <br>
+						Using the induction hypothesis, the last expression can be rewritten as 
+			     		<br>
+			     		<b><i> n( n + 1 )/2 + (n + 1) </i></b>.
+			     		<br>
+						Factoring <b><i>(n + 1)</i></b> out, we get &nbsp;&nbsp;&nbsp;<b><i>(n + 1)(n + 2) / 2 </i></b>,
+			      		<br>
+			      		which is equal to the <b>RHS</b> for <b><i>n+1</i></b>. 
+			      		<br>
+						Thus <b><i>LHS = RHS</i></b> for <b><i> n+1</i></b>. 
+						<br>
+						<br>
+						End of Proof.
+						<br>
+						<br> 
+			    </div>
+			</div>
+	      	<div class="col-sm-1"></div>
+	    </div>
+
+	   <footer class="footer col-lg-12 col-xm-12 col-sm-12" id="footer">
+		<h6>CONTACTS US ON :  </h6></b>
+		  <b>
+		    <a href="https://www.whatsapp" style="color: #25D366 "><i class="fab fa-whatsapp">&nbsp;WHATSAPP</i></a>  &nbsp;&nbsp;
+		    <a href="https://www.facebook.com" style="color: #3b5999"><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a> &nbsp;&nbsp;
+		    <a href="https://www.twitter.com" style="color: #55acee" ><i class="fab fa-twitter-square">&nbsp;TWITTER</i></a> &nbsp;&nbsp;
+		    <a href="https://www.linkedin.com " style=" color: #0077B5"><i class="fab fa-linkedin">&nbsp;LINKEDIN</i></a> &nbsp;&nbsp;
+		  </b>
+		  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		  &reg;All rights reserved,  &nbsp;&nbsp;  2018 &copy; Group Two | Computer Science | Datastructures and Algorithms.
+		 
+		</footer>
+
+<!-- Javascript -->
+<script src="./static/jquery.min.js.download" type="text/javascript"></script>
+<script src="./static/bootstrap.min.js.download" type="text/javascript"></script>
+
+
+</body>
+</html>

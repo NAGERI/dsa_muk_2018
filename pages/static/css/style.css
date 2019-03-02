@@ -1,0 +1,42 @@
+#navbars{
+	display: none;
+}
+
+#navbars ul ul:hover >a {
+	display: none;
+	font-weight: 30px;
+	background-color: lightblue;
+	border-radius: 0.25rem;
+}
+#navbarCollapse ul li ul :hover {
+	list-style-type: none;
+	display: none;
+	position: relative;
+}
+#navbarCollapse ul li ul li:hover > a{
+	float: bottom;
+	display: block;
+}
+ #navbarCollapse ul {
+ 	float: left;
+ 	position: relative;
+	font-size: 15px;	
+	display: block-inline;
+	}
+#parag{
+	border: 10px;
+	padding: 10px;
+	font-family: sans-serif;
+}
+#footer{
+
+	border-radius: 0.75rem;
+	margin-bottom: 1px;
+	height: 110px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	background-color: lightgrey;
+	
+}
+

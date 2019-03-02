@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles sheet -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+  
+    <title>DATA STRUCTURES</title>
+</head>
+<body class="container-fluid col-lg-12 col-sm-12 col-xm-12" style="background-color: #fcfcfc">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CSC 2100 |  HOME</a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">CSC 2100 |  HOME<span class="sr-only">(current)</span></a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Datastructures
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Arrays</a></li>
+              <li><a href="#">Queues</a></li>
+              <li><a href="#">Stacks</a></li>
+              <li><a href="#">Lists</a></li>              
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="algorithm.html">Algorithm analysis</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="recursion.html">Recursion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="induction.html">Induction</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More data structures
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Linked Lists</a></li>
+              <li><a href="#">Priority Queue</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sorting
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Merge Sort</a></li>
+              <li><a href="#">Quick Sort</a></li>
+              <li><a href="#">Bubble Sort</a></li>
+              <li><a href="#">Insertion Sort</a></li>
+              <li><a href="#">Selection Sort</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Searching
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Binary Search</a></li>
+              <li><a href="#">Linear Search</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+          <div class="row">
+            <h4><b>MERGE SORT</b></h4>
+                <p>
+                  It is a sorting algorithm which is more efficient than insertion and selection sort and  is usually defined recursively, where the recursive calls work on smaller and smaller parts of the list.
+
+                </p>
+                <div class="col-sm-5">
+                  <h4><b>MERGE SORT EXAMPLE</b></h4>
+                <p>
+                Based on a divide and conquer strategy:
+                <div >
+                    <li >list is divided into two halves (divide).</li>
+                    <li>each half is sorted independently (conquer).</li>
+                    <li>two halves are merged into a sorted sequence</li>
+                    <li>Split original list recursively until base case is reached</li>
+                  </div>
+                  
+                </p>
+                </div>
+             
+                <div class="col-sm-6"><img src="static/images/merge.PNG"></div>
+                <img src="">
+          </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-sm-5">
+              
+              <h4><b>Memoization </b></h4>
+                <p>
+                  A common technique to speed up recursive algorithms is called memoization<br>
+                A memoized function stores (caches) results of previous calls.<br>
+                When the function is later called with the same parameters, it returns the stored result rather than recalculating it.<br>
+                Memoized functions are not allowed to have side-effects.
+                <div >
+                    <li >No screen output.</li>
+                    <li >No change of object attributes</li>
+                    <li >No global variables assignments</li>
+                  </div>
+                </p>
+                Memoization is usually implemented with hash tables<br>
+                Difficult space/time trade-off<br>
+                
+            </div>
+            <div class="col-sm-6">
+              <h4><b>Memoization example</b></h4>
+              <img src="static/images/memo.PNG"></div>    
+          </div>
+      </div>
+  <div class="col-sm-1"></div>
+
+    
+ <footer class="footer col-lg-12 col-xm-12 col-sm-12" id="footer">
+    <h6>CONTACTS US ON :  </h6></b>
+      <b>
+        <a href="https://www.whatsapp" style="color: #25D366 "><i class="fab fa-whatsapp">&nbsp;WHATSAPP</i></a>  &nbsp;&nbsp;
+        <a href="https://www.facebook.com" style="color: #3b5999"><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a> &nbsp;&nbsp;
+        <a href="https://www.twitter.com" style="color: #55acee" ><i class="fab fa-twitter-square">&nbsp;TWITTER</i></a> &nbsp;&nbsp;
+        <a href="https://www.linkedin.com " style=" color: #0077B5"><i class="fab fa-linkedin">&nbsp;LINKEDIN</i></a> &nbsp;&nbsp;
+      </b>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &reg;All rights reserved,  &nbsp;&nbsp;  2018 &copy; Group Two | Computer Science | Datastructures and Algorithms.
+     
+    </footer>
+	
+<!-- Javascript -->
+<script src="./static/jquery.min.js.download" type="text/javascript"></script>
+<script src="./static/bootstrap.min.js.download" type="text/javascript"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles sheet -->
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-4.1.1/dist/css/bootstrap.min.css'%}"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css"> -->
+    <script>
+      $(document).ready(function(){
+  // $("#navbars").click(function(){
+  //     $(this).hide();
+  // });
+
+  $("#datasTag").click(function(){
+      $("#datas").hide(1000);
+  }); 
+});
+    </script>
+
+
+    <title>DATA STRUCTURES</title>
+  </head>
+  <body class="container-fluid col-lg-12 col-sm-12 col-xm-12" style="background-color: #fcfcfc">
+  
+   
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="navbars">
+     <a class="navbar-brand" href="index.html">CSC 2100 |  HOME</a>
+   
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav nav-pills mr-auto">
+          <li class="nav-item active dropdown">
+            <a id="datasTag" class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Data Structures <span class="sr-only">(current)</span></a>
+            <ul id="datas">
+              <li><a href="#">Arrays</a></li>
+              <li><a href="#">Stacks</a></li>
+              <li><a href="#">Queues</a></li>
+              <li><a href="#">Priority Queues</a></li>
+              <li><a href="#">Lists</a></li>
+              <li><a href="#">Linked Lists</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="algorithm.html">Algorithm analysis</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="recursion.html">Recursion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="induction.html">Induction</a>
+          </li>
+         <li class="nav-item dropdown" >
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sorting</a>
+              <ul>
+                <li><a class="dropdown-item" href="#one">Selection Sort</a></li>
+                <li><a class="dropdown-item" href="#two">Bubble Sort</a></li>
+                <li><a class="dropdown-item" href="#three">Insertion Sort</a></li>
+                <li><a class="dropdown-item" href="#three">Quick Sort</a></li>
+              </ul>
+            </li>
+      </ul>
+    </div>
+</nav>
+<br>
+<div>
+   <marquee  scrolldelay="20" > <b><h3>DATA STRUCTURES AND ALGORITHIMS</h3></b> </marquee>
+    <div class="row" >
+      <img src="static/images/algos.png" style="opacity: 80%; height: 400px; width:1000px; margin-left: 170px;  ">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xm-6 jumbotron">
+        
+        <P><b><strong> Data Structures</strong></b> are the programmatic way of storing data so that data can be used efficiently. Almost every enterprise application uses various types of data structures in one or the other way.  Data structures have gained significant importance because of their usage in several disciplines. Data structures are integral part of modern operating systems, compilers, database Management systems, data communications and so on
+         </P> 
+       
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xm-6 jumbotron" id="parag">
+        
+        <p><strong><b>Algorithm</b></strong>  is a step-by-step procedure, which defines a set of instructions to be executed in a certain order to get the desired output. Algorithms are generally created independent of underlying languages, i.e. <em>an algorithm can be implemented in more than one programming language</em>.</p>
+        
+      </div>
+    </div>
+    <div  >
+      <p id="datastr_exp">
+      Examples of data structure include :
+      <a href="https://en.wikipedia.org/wiki/Array_data_structure">Arrays</a> ,<a href="https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm">stack</a>,<a href="https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm">queues</a>, <a href="https://en.wikipedia.org/wiki/Linked_list">linked lists</a>, <a href="https://en.wikipedia.org/wiki/Hash_table">hash tables</a> and many more, which are used to store data in an organized way such that it can be used efficiently.
+      </p>
+      Examples of algorithms may include :<br>
+      <ol type="I">
+        <li>Searching algorithms</li>
+        <li>Sorting algorithms</li> 
+        <li>Divide and conquer</li>
+        <li>Back tracking</li> 
+        <li>greedy algorithms </li>
+       </ol> 
+        and many more, which can operate on the data structures in order to produce results.
+      <hr>
+
+      Algorithms together with data structures have wide spread  use in several applications.
+       These include: 
+      <ol type="I">
+        <li>Image processing</li>
+        <li>Digital signal processing</li>
+        <li>Simulation</li>
+        <li>Numerical computations</li>
+        <li>Cryptography</li>
+        <li>Data compressions </li>
+        <li>Genetic studies</li>
+      </ol>
+      This means that data structure and algorithms are closely related. The data structure you choose directly affect the algorithm that will be used and vice versa.</P>
+      <hr>
+    </div>
+</div>
+  <footer class="footer col-lg-12 col-xm-12 col-sm-12" id="footer">
+  <br><b><h6>CONTACTS US ON :  </h6></b>
+    <b>
+      <a href="https://www.whatsapp" style="color: #25D366 "><i class="fab fa-whatsapp">&nbsp;WHATSAPP</i></a>  &nbsp;&nbsp;
+      <a href="https://www.facebook.com" style="color: #3b5999"><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a> &nbsp;&nbsp;
+      <a href="https://www.twitter.com" style="color: #55acee" ><i class="fab fa-twitter-square">&nbsp;TWITTER</i></a> &nbsp;&nbsp;
+      <a href="https://www.linkedin.com " style=" color: #0077B5"><i class="fab fa-linkedin">&nbsp;LINKEDIN</i></a> &nbsp;&nbsp;
+      
+      
+    </b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &reg;All rights reserved,  &nbsp;&nbsp;  2018 &copy; Group 10 computer science, Datastructures and Algorithms.
+   
+  </footer>
+<!-- <script type="text/javascript" src="{% static 'bootstrap-4.1.1/dist/js/bootstrap.min.js'%}"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>  
+<script type="text/javascript" src="static/bootstrap.min.js.download"></script>
+<script type="text/javascript" src="static/jquery.min.js.download"></script>
+</body>
+</html>

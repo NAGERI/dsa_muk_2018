@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!--Bootstrap-->
+    <link rel="stylesheet" href="./static/bootstrap.min.css">
+  
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles sheet -->
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    
+    
+    <title>DATA STRUCTURES</title>
+</head>
+<body class="container-fluid col-lg-12 col-sm-12 col-xm-12" style="background-color: #fcfcfc">
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">CSC 2100 |  HOME</a>
+      </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <!-- <li class="active"><a href="#">CSC 2100 |  HOME<span class="sr-only">(current)</span></a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Datastructures
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Arrays</a></li>
+              <li><a href="#">Queues</a></li>
+              <li><a href="#">Stacks</a></li>
+              <li><a href="#">Lists</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="algorithm.html">Algorithm analysis</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="recursion.html">Recursion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="induction.html">Induction</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More data structures
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Linked Lists</a></li>
+              <li><a href="#">Priority Queue</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Sorting
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Merge Sort</a></li>
+              <li><a href="#">Quick Sort</a></li>
+              <li><a href="#">Bubble Sort</a></li>
+              <li><a href="#">Insertion Sort</a></li>
+              <li><a href="#">Selection Sort</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Searching
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Binary Search</a></li>
+              <li><a href="#">Linear Search</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+    <div class="container-fluid">
+      <div class="row">
+      	<div class="col-sm-1"></div>
+
+      	<div class="col-sm-10">
+      		
+      		<h1>ALGORITHM ANALYSIS</h1>
+		   <p>
+			<p>
+				In theoretical analysis of algorithms, it is common to estimate their complexity in the asymptotic sense, i.e., to estimate the complexity function for arbitrarily large input. The term "analysis of algorithms" was coined by Donald Knuth.
+			</p>
+			An algorithm is a finite sequence of instructions, each of which has a clear meaning and can be performed with a finite amount of effort in a finite length of time.
+			<br>
+				This is due to the following factors:
+				<br>
+			<ul>
+				<li>Unambiguous − Algorithm should be clear and unambiguous. Each of its steps (or phases), and their inputs/outputs should be clear and must lead to only one meaning.
+				<li>Input − An algorithm should have 0 or more well-defined inputs.
+				<li>Output − An algorithm should have 1 or more well-defined outputs, and should match the desired output.
+				<li>Finiteness − Algorithms must terminate after a finite number of steps.
+				<li>Feasibility − Should be feasible with the available resources.
+				<li>Independent − An algorithm should have step-by-step directions, which should be independent of any programming code.
+			</ul><br>
+			Algorithms can be developed for solving same problem. The question is deciding which Algorithm can be chosen as the best algorithm for problem solving. 
+			<br>
+			Many programmers think that the best algorithm is one which executes for a shortest period of time. This can be true to a less extent, as it is had to know why it executed for such shorter period. May be the program was small, the machine specification onto which the program executed was high and so on.
+			<br>
+			Performance analysis is required in order to measure the efficiency and effectiveness  of a particular algorithm.
+			<br>
+			This can be done using the empirical/experimental approach and analytical method.
+			</p>
+
+			<h3>The Need for Analysis</h3>
+			<p>
+			By considering an algorithm for a specific problem, we can begin to develop pattern recognition so that similar types of problems can be solved by the help of this algorithm.
+
+			Algorithms are often quite different from one another, though the objective of these algorithms are the same. For example, we know that a set of numbers can be sorted using different algorithms. Number of comparisons performed by one algorithm may vary with others for the same input. Hence, time complexity of those algorithms may differ. At the same time, we need to calculate the memory space required by each algorithm.
+
+			Analysis of algorithm is the process of analyzing the problem-solving capability of the algorithm in terms of the time and size required (the size of memory for storage while implementation). However, the main concern of analysis of algorithms is the required time or performance. Generally, we perform the following types of analysis −
+			</p>
+			<ul>
+			<li>Worst-case − The maximum number of steps taken on any instance of size <b>a</b>.</li>
+
+			<li>Best-case − The minimum number of steps taken on any instance of size <b>a</b>.</li>
+
+			<li>Average case − An average number of steps taken on any instance of size <b>a</b>.</li>
+
+			<li>Amortized − A sequence of operations applied to the input of size a averaged over time.</li>
+			</ul>
+
+			To solve a problem, we need to consider <b>time</b> as well as <b>space complexity</b> as the program may run on a system where memory is limited but adequate space is available or may be vice-versa.
+			<br>
+			 In this context, if we compare bubble sort and merge sort. Bubble sort does not require additional memory, but merge sort requires additional space. Though time complexity of bubble sort is higher compared to merge sort, we may need to apply <b>bubble sort</b> if the program needs to run in an environment, where memory is very limited.
+			<br>
+				<!-- <iframe style=" width: 50%; height: 400px; align-content: center;" id="myVideo" src="{% static  'video/notation.mp4' %}"></iframe>  VERY NICE VIDEO :-> https://www.youtube.com/embed/zpOULjyy-n8?rel=0 
+				<div class="embed-responsive embed-responsive-4by3">
+		  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6Ol2JbwoJp0" style="margin-left: 100px;margin-bottom: 0px; width: 75%; height: 500px;"></iframe>
+		  			<p>The above is a video about analysis of algorithms</p>
+			  </div>-->
+
+          <!-- LINK TO DATASTRUCTURES LISTS,STACK AND QUEUES  https://youtu.be/t2CEgPsws3U -->
+     
+        </div>
+      	
+      	<div class="col-sm-1"></div>
+
+      </div>
+
+      <footer class="footer col-lg-12 col-xm-12 col-sm-12" id="footer">
+    <h6>CONTACTS US ON :  </h6></b>
+      <b>
+        <a href="https://www.whatsapp" style="color: #25D366 "><i class="fab fa-whatsapp">&nbsp;WHATSAPP</i></a>  &nbsp;&nbsp;
+        <a href="https://www.facebook.com" style="color: #3b5999"><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a> &nbsp;&nbsp;
+        <a href="https://www.twitter.com" style="color: #55acee" ><i class="fab fa-twitter-square">&nbsp;TWITTER</i></a> &nbsp;&nbsp;
+        <a href="https://www.linkedin.com " style=" color: #0077B5"><i class="fab fa-linkedin">&nbsp;LINKEDIN</i></a> &nbsp;&nbsp;
+      </b>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &reg;All rights reserved,  &nbsp;&nbsp;  2018 &copy; Group Two | Computer Science | Datastructures and Algorithms.
+     
+    </footer>
+
+    <!-- Javascript -->
+    <script src="./static/jquery.min.js.download" type="text/javascript"></script>
+    <script src="./static/bootstrap.min.js.download" type="text/javascript"></script>
+
+</body>
+</html>

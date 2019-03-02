@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/style.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles sheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/style.css"> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-4.1.1/dist/css/bootstrap.min.css'%}"> -->
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+
+
+  $("#navbars").click(function(){
+      $(this).hide();
+  });
+
+  $("#navbars").click(function(){
+      $(this).show();
+  }); 
+});
+    </script>
+
+
+    <title>DATA STRUCTURES</title>
+  </head>
+  <body class="container-fluid col-lg-12 col-sm-12 col-xm-12" style="background-color: #fcfcfc">
+  
+   
+
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="navbars">
+   <a class="navbar-brand" href="index.html">CSC 2100 |  HOME</a>
+ 
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav nav-pills mr-auto">
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Data Structures <span class="sr-only">(current)</span></a>
+          <ul>
+            <li><a href="#">Arrays</a></li>
+            <li><a href="#">Stacks</a></li>
+            <li><a href="#">Queues</a></li>
+            <li><a href="#">Priority Queues</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Linked Lists</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="algorithm.html">Algorithm analysis</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="recursion.html">Recursion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="induction.html">Induction</a>
+        </li>
+       <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sorting</a>
+            <ul>
+              <li><a class="dropdown-item" href="#one">Selection Sort</a></li>
+              <li><a class="dropdown-item" href="#two">Bubble Sort</a></li>
+              <li><a class="dropdown-item" href="#three">Insertion Sort</a></li>
+              <li><a class="dropdown-item" href="#three">Quick Sort</a></li>
+            </ul>
+          </li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="row">
+	<h1>ALGORITHM ANALYSIS</h1>
+
+	<div class="container">
+		<p>
+			<p>
+				In theoretical analysis of algorithms, it is common to estimate their complexity in the asymptotic sense, i.e., to estimate the complexity function for arbitrarily large input. The term "analysis of algorithms" was coined by Donald Knuth.
+			</p>
+			An algorithm is a finite sequence of instructions, each of which has a clear meaning and can be performed with a finite amount of effort in a finite length of time.
+			<br>
+				This is due to the following factors:
+				<br>
+			<ul>
+				<li>Unambiguous − Algorithm should be clear and unambiguous. Each of its steps (or phases), and their inputs/outputs should be clear and must lead to only one meaning.
+				<li>Input − An algorithm should have 0 or more well-defined inputs.
+				<li>Output − An algorithm should have 1 or more well-defined outputs, and should match the desired output.
+				<li>Finiteness − Algorithms must terminate after a finite number of steps.
+				<li>Feasibility − Should be feasible with the available resources.
+				<li>Independent − An algorithm should have step-by-step directions, which should be independent of any programming code.
+			</ul><br>
+			Algorithms can be developed for solving same problem. The question is deciding which Algorithm can be chosen as the best algorithm for problem solving. 
+			<br>
+			Many programmers think that the best algorithm is one which executes for a shortest period of time. This can be true to a less extent, as it is had to know why it executed for such shorter period. May be the program was small, the machine specification onto which the program executed was high and so on.
+			<br>
+			Performance analysis is required in order to measure the efficiency and effectiveness  of a particular algorithm.
+			<br>
+			This can be done using the empirical/experimental approach and analytical method.
+		</p>
+
+		<h3>The Need for Analysis</h3>
+		<p>
+			By considering an algorithm for a specific problem, we can begin to develop pattern recognition so that similar types of problems can be solved by the help of this algorithm.
+
+			Algorithms are often quite different from one another, though the objective of these algorithms are the same. For example, we know that a set of numbers can be sorted using different algorithms. Number of comparisons performed by one algorithm may vary with others for the same input. Hence, time complexity of those algorithms may differ. At the same time, we need to calculate the memory space required by each algorithm.
+
+			Analysis of algorithm is the process of analyzing the problem-solving capability of the algorithm in terms of the time and size required (the size of memory for storage while implementation). However, the main concern of analysis of algorithms is the required time or performance. Generally, we perform the following types of analysis −
+		</p>
+		<ul>
+			<li>Worst-case − The maximum number of steps taken on any instance of size <b>a</b>.</li>
+
+			<li>Best-case − The minimum number of steps taken on any instance of size <b>a</b>.</li>
+
+			<li>Average case − An average number of steps taken on any instance of size <b>a</b>.</li>
+
+			<li>Amortized − A sequence of operations applied to the input of size a averaged over time.</li>
+		</ul>
+
+		To solve a problem, we need to consider <b>time</b> as well as <b>space complexity</b> as the program may run on a system where memory is limited but adequate space is available or may be vice-versa.
+		<br>
+		 In this context, if we compare bubble sort and merge sort. Bubble sort does not require additional memory, but merge sort requires additional space. Though time complexity of bubble sort is higher compared to merge sort, we may need to apply <b>bubble sort</b> if the program needs to run in an environment, where memory is very limited.
+		<br>
+		
+	</div>
+		<!-- <iframe style=" width: 50%; height: 400px; align-content: center;" id="myVideo" src="{% static  'video/notation.mp4' %}"></iframe>  VERY NICE VIDEO :-> https://www.youtube.com/embed/zpOULjyy-n8?rel=0 -->
+		<div class="embed-responsive embed-responsive-4by3">
+  			<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6Ol2JbwoJp0" style="margin-left: 100px;margin-bottom: 0px; width: 75%; height: 500px;"></iframe>
+  			<p>The above is a video about analysis of algorithms</p>
+		</div>
+
+          <!-- LINK TO DATASTRUCTURES LISTS,STACK AND QUEUES  https://youtu.be/t2CEgPsws3U -->
+</div>
+ <footer class="footer col-lg-12 col-xm-12 col-sm-12" id="footer">
+  <br><b><h6>CONTACTS US ON :  </h6></b>
+    <b>
+      <a href="https://www.whatsapp" style="color: #25D366 "><i class="fab fa-whatsapp">&nbsp;WHATSAPP</i></a>  &nbsp;&nbsp;
+      <a href="https://www.facebook.com" style="color: #3b5999"><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a> &nbsp;&nbsp;
+      <a href="https://www.twitter.com" style="color: #55acee" ><i class="fab fa-twitter-square">&nbsp;TWITTER</i></a> &nbsp;&nbsp;
+      <a href="https://www.linkedin.com " style=" color: #0077B5"><i class="fab fa-linkedin">&nbsp;LINKEDIN</i></a> &nbsp;&nbsp;
+      <!--<a href="https://www.instagram.com" style="color: #e4405f"><i class="fab fa-instagram"></i>&nbsp;INSTAGRAM</a>-->
+    </b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &reg;All rights reserved,  &nbsp;&nbsp;  2018 &copy; Group 10 computer science, Datastructures and Algorithms.
+   
+  </footer>
+<!-- <script type="text/javascript" src="{% static 'bootstrap-4.1.1/dist/js/bootstrap.min.js'%}"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>  
+<script type="text/javascript" src="static/bootstrap.min.js.download"></script>
+<script type="text/javascript" src="static/jquery.min.js.download"></script>

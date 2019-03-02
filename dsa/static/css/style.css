@@ -1,0 +1,50 @@
+*{
+	font-size: 12pt;
+}
+
+.navbar{
+	font-family: Georgia;
+	font-size: 30px;
+	font-weight: 20px;
+	background-color: rgb(36, 62, 87);
+	padding-bottom: 0%;
+	margin-top: 10px;
+	height: 70px;
+	align-content: center;
+}
+
+.navbar ul li:hover > a{
+	display: block;
+	height: fill;
+	font-size-adjust: 15px;
+	color: rgb(243, 8, 8);
+	font-weight: 30px;
+	background-color: lightblue;
+	border-radius: 0.25rem;
+}
+#navbarCollapse ul li ul{
+	list-style-type: none;
+	display: none;
+	position: absolute;
+}
+#parag{
+	border: 10px;
+	padding: 10px;
+	background-color: lightgrey;
+	border-radius: 1rem;
+	font-family: Arial;
+
+}
+#footer{
+	margin-bottom: 1px;
+	height: 110px;
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-bottom: 20px;
+	background-color: lightgray;
+	
+}
+#footer h6{
+	font-display: inherit;
+	font-size: 12px;
+}

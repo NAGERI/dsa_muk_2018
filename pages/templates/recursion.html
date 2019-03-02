@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/style.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- styles sheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/style.css"> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-4.1.1/dist/css/bootstrap.min.css'%}"> -->
+    <link rel="stylesheet" type="text/css" href="static/bootstrap.min.css">
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+
+
+  $("#navbars").click(function(){
+      $(this).hide();
+  });
+
+  $("#navbars").click(function(){
+      $(this).show();
+  }); 
+});
+    </script>
+
+
+    <title>DATA STRUCTURES</title>
+  </head>
+  <body class="container-fluid col-lg-12 col-sm-12 col-xm-12" style="background-color: #fcfcfc">
+  
+   
+
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" id="navbars">
+   <a class="navbar-brand" href="index.html">CSC 2100 |  HOME</a>
+ 
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav nav-pills mr-auto">
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Data Structures <span class="sr-only">(current)</span></a>
+          <ul>
+            <li><a href="#">Arrays</a></li>
+            <li><a href="#">Stacks</a></li>
+            <li><a href="#">Queues</a></li>
+            <li><a href="#">Priority Queues</a></li>
+            <li><a href="#">Lists</a></li>
+            <li><a href="#">Linked Lists</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="algorithm.html">Algorithm analysis</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="recursion.html">Recursion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="induction.html">Induction</a>
+        </li>
+       <li class="nav-item dropdown" >
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sorting</a>
+            <ul>
+              <li><a class="dropdown-item" href="#one">Selection Sort</a></li>
+              <li><a class="dropdown-item" href="#two">Bubble Sort</a></li>
+              <li><a class="dropdown-item" href="#three">Insertion Sort</a></li>
+              <li><a class="dropdown-item" href="#three">Quick Sort</a></li>
+            </ul>
+          </li>
+    </ul>
+  </div>
+</nav>
+	
+	<h1>RECURSION</h1>
+	<br>
+		<h6>
+			<b><i>Recursion</i></b> is a programming technique in which a method calls itself, that is, a method is defined interms of itself.
+		</h6>
+		<p>
+			A recursive function can go infinite like a loop.To avoid infinite running of recursive function, there are two properties that a recursive function must have:
+			<ul>
+				<li>Base criteria/case <b>−</b> There must be at least one base criteria or condition, such that, when this condition is met the function stops calling itself recursively.
+				</li>
+				<li>Progressive approach <b>−</b> The recursive calls should progress in such away that each time a recursive call is made it comes closer to the base criteria.</li>
+			</ul>
+		</p>
+		<div>
+			<h5>Characteristics of recursive methods.</h5>
+			<p>
+				<ul>
+					<li>The recursive method calls itself to solve a smaller problem.</li>
+					<li>The base case is the smallest problem that the routine solves and the value is returned to the calling method.</li>
+					<li>Calling a method involves certain overhead in transferring the control to the beginning of the method and in storing the information of the return poin.</li>
+					<li>Memory is used to store all the intermediate arguments and return values on the internal stack.</li>
+				</ul>
+			</p>
+			<p>
+				<h6> There is also Direct and Indirect recursion</h6>
+				<ul>
+					<li><b>Direct recursion</b> occurs when a method invokes itself.</li>
+					<li><b>Indirect recursion</b> occurs when a method invokes another method, eventually resulting in the original method being invoked again</li>
+				</ul>
+			</p>
+		</div>
+		
+
+		<p>A recursive algorithm is an algorithm which calls itself with "smaller (or simpler)" input values, and which obtains the result for the current input by applying simple operations to the returned value for the smaller (or simpler) input. More generally if a problem can be solved utilizing solutions to smaller versions of the same problem, and the smaller versions reduce to easily solvable cases, then one can use a recursive algorithm to solve that problem. For example, the elements of a recursively defined set, or the value of a recursively defined function can be obtained by a recursive algorithm. </p> &nbsp;
+
+		<p>If a set or a function is defined recursively, then a recursive algorithm to compute its members or values mirrors the definition. Initial steps of the recursive algorithm correspond to the basis clause of the recursive definition and they identify the basis elements. They are then followed by steps corresponding to the inductive clause, which reduce the computation for an element of one generation to that of elements of the immediately preceding generation. </p> &nbsp;
+
+		<p>In general, <em>recursive computer programs require more memory and computation compared with iterative algorithms, but they are simpler and for many cases a natural way of thinking about the problem.</em></p>
+
+		<div>
+			Example 1: Algorithm for finding the k<sup>th</sup> even natural number 
+			<br>
+			Note here that this can be solved very easily by simply outputting 2*(k - 1) for a given k . The purpose here, however, is to illustrate the basic idea of recursion rather than solving the problem. 
+			<br>
+			<pre>
+				Algorithm 1:   Even(positive integer k) 
+				Input: k , a positive integer 
+				Output: k-th even natural number (the first even being 0) 
+
+				Algorithm: 
+				if k = 1, then return 0; 
+				else return Even(k-1) + 2 . 
+			</pre>
+			Here the computation of <b>Even(k)</b> is reduced to that of Even for a smaller input value, that is <b>Even(k-1)</b>. <b>Even(k)</b> eventually becomes <b>Even(1)</b> which is 0 by the first line. For example, to compute Even(3), Algorithm Even(k) is called with k = 2. In the computation of Even(2), Algorithm Even(k) is called with k = 1. Since Even(1) = 0, 0 is returned for the computation of Even(2), and Even(2) = Even(1) + 2 = 2 is obtained. This value 2 for Even(2) is now returned to the computation of Even(3), and Even(3) = Even(2) + 2 = 4 is obtained. <br>
+			As can be seen by comparing this algorithm with the recursive definition of the set of nonnegative even numbers, the first line of the algorithm corresponds to the basis clause of the definition, and the second line corresponds to the inductive clause. 
+			<br>
+			By way of comparison, let us see how the same problem can be solved by an <em>iterative algorithm</em>
+			<br> 
+			<br>
+			<pre >
+				Algorithm 1-a:   Even(positive integer k) 
+				Input: k, a positive integer 
+				Output: k-th even natural number (the first even being 0) 
+
+				Algorithm: 
+
+				int   i, even; 
+				i := 1;
+				even := 0;
+				while( i < k ) { 
+				          even := even + 2; 
+				          i := i + 1; 
+				} 
+				return even . 
+			</pre>
+		</div>
+		<br>
+		<br>
+			<hr>
+
+
+			<SCRIPT LANGUAGE="JavaScript">
+
+				function factorial(n) {
+							if (n > 0) {
+								return n * (factorial(n - 1))
+							} else {
+									return 1
+								}
+							}
+							// function for sum of n numbers
+
+				function sum_of_n(n){
+						if(n>1){
+							return (Number(n) + Number(sum_of_n(n - 1))) 
+						}
+
+						else{
+							return n;
+						}
+				};
+			// 	function sum_of_n(nums){  
+			// 	  if(nums.length == 1){  
+			// 	     return nums[0];  
+			// 	  };  
+			// 	  return nums[0] + sum_of_n(nums.slice(1));  
+			// }  
+				function fibonacci(n){
+					if (n == 0) {
+						return n 
+						}
+						else if (n == 1) {
+						return n 
+						}
+					else{
+						return fibonacci(n-2) + fibonacci(n-1)  
+					}
+				}
+
+			</SCRIPT>
+			<!-- <?PHP
+				function sum_of_n($number) { 
+
+				    if ($number == 0) { 
+				        return 1; 
+				    } else { 
+				        return ($number + sum_of_n($number-1)); 
+				    } 
+				}
+			?> -->
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<p><b>Example for <em>FACTORIAL</em> :</b></p>
+						<p>Input any value to obtain it's factorial </p>
+					<br>
+					<FORM>
+						Enter an input value: <INPUT TYPE = "text" NAME="input" VALUE=0>
+						<P><INPUT TYPE="button" VALUE="Calculate Factorial"onClick="this.form.output.value = factorial(this.form.input.value)">
+						<P>Results: <INPUT TYPE="text" NAME="output">
+					</FORM>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<p><b>Example for <em>SUM</em> :</b></p>
+						<p>Input any value, n, to obtain the sum of n numbers</p>
+					<br>
+					<FORM>
+						Enter an input value: <INPUT TYPE = "text" NAME="input" VALUE=0>
+						<P><INPUT TYPE="button" VALUE="Calculate sum_of_n"onClick="this.form.output.value = sum_of_n(this.form.input.value)">
+						<P>Results: <INPUT TYPE="text" NAME="output">
+					</FORM>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<p><b>Example for <em>FIBONACCI</em> :</b></p>
+						<p>Input any value, n, to obtain the n<sup>th</sup> number in fibonacci series</p>
+					<br>
+					<FORM>
+						Enter an input value: <INPUT TYPE = "text" NAME="input" VALUE=0>
+						<P><INPUT TYPE="button" VALUE="Return the nth fibonacci"onClick="this.form.output.value = fibonacci(this.form.input.value)">
+						<P>Results: <INPUT TYPE="text" NAME="output">
+					</FORM>
+				</div>
+				
+			</div>
+			<hr>
+		<div>
+							
+			<h2>Tower of Hanoi :Algorithm</h2>
+			<p>Tower of Hanoi, is a mathematical puzzle which consists of three towers (pegs) and more than one rings is as depicted</p>
+
+			 <p>These rings are of different sizes and stacked upon in an ascending order, i.e. the smaller one sits over the larger one. There are other variations of the puzzle where the number of disks increase, but the tower count remains the same.</p>
+			<h6>Tower of Hanoi puzzle with n disks can be solved in minimum 2n−1 steps. </h6>
+			It can be implemented using a recursive algorithm
+
+			The key to solving a problem recursively is to recognize that it can be broken down into a collection of smaller sub-problems, to each of which that same general solving procedure that we are seeking applies, and the total solution is then found in some simple way from those sub-problems' solutions. Each of thus created sub-problems being "smaller" guarantees that the base case(s) will eventually be reached. Thence, for the Towers of Hanoi:<br>
+			 <p>
+				label the pegs <b>A, B, C,</b>
+				<br>
+				let <b>n</b> be the total number of disks,
+				<br>
+				number the disks from 1 (smallest, topmost) to <b>n</b> (largest, bottom-most).
+				<br>
+				Assuming all <b>n</b> disks are distributed in valid arrangements among the pegs; 
+				assuming there are <b>m</b> top disks on a source peg, and all the rest of the disks are larger than <b>m</b>, so they can be safely ignored; 
+				to move <b>m</b> disks from a source peg to a target peg using a spare peg, without violating the <strong><em>rules</em></strong> 
+				<ol type="i" style="background-color: #dadfe8; padding: 30px;" >
+				    <li >Only one disk can be moved among the towers at any given time.</li>
+				    <li>Only the "top" disk can be removed.</li>
+				    <li>No large disk can sit over a small disk.</li>
+				 </ol>
+			</p>
+				<p>
+					<ol>
+						<li>Move <b>m − 1</b> disks from the source to the spare peg, by the same general solving procedure. Rules are not violated, by assumption. This leaves the disk m as a top disk on the source peg.
+						<br>
+						<li>Move the <b>m<sup>th</sup></b> disk from the source to the target peg, which is guaranteed to be a valid move, by the assumptions — a simple step.<br>
+						<li>Move the <b>m − 1</b> disks that we have just placed on the spare, from the spare to the target peg by the same general solving procedure, so they are placed on top of the disk <b>m</b> without violating the rules.
+						<br>
+					</ol>
+						The base case being to move 0 disks (in steps 1 and 3), that is, do nothing – which obviously doesn't violate the rules.
+						<br>
+						The full Tower of Hanoi solution then consists of moving <b>n</b> disks from the source peg <b>A</b> to the target/destination peg <b>C</b>, using <b>B</b> as the spare/auxillary peg.
+				</p>
+				<h6>A recursive algorithm for Tower of Hanoi can be driven as follows −</h6>
+				<br>
+				<b>START</b>
+				<br>
+				Procedure Hanoi (disk, source, dest, aux)
+				<br>
+				 &nbsp;  IF disk == 1, THEN
+				   <br>
+				   &nbsp;&nbsp;&nbsp;   move disk from source to dest
+				    <br>             
+				  &nbsp; ELSE
+				   <br>
+				    &nbsp;&nbsp;&nbsp;  Hanoi(disk - 1, source, aux, dest)&nbsp;&nbsp;&nbsp;     // Step 1
+				      <br>
+				    &nbsp;&nbsp;&nbsp;  move disk from source to dest &nbsp;&nbsp;&nbsp;         // Step 2
+				      <br>
+				     &nbsp;&nbsp;&nbsp; Hanoi(disk - 1, aux, dest, source)  &nbsp;&nbsp;&nbsp;   // Step 3
+				      <br>
+				  &nbsp; END IF
+				   <br>
+				END Procedure
+				<br>
+				STOP
+				<br>
+			<h3>Illustration of a recursive solution for the Towers of Hanoi puzzle with 4 disks and another having 6 disks</h3>
+			<br>
+				<div class="row">
+					<img src="{%static 'images/hanoi.png' %}" style="height: 700px; margin-right: 100px;" alt="hanoi tower ">
+					<img src="{%static 'images/2.gif' %}" style="height: 700px; width: 450px;" alt="Gif image for solving the hanoi tower problem">
+				</div>
+		</div>
+		<div>
+			
+			<h4><b>MERGE SORT</b></h4>
+			<p>
+				It is a sorting algorithm which is more efficient than insertion and selection sort and  is usually defined recursively, where the recursive calls work on smaller and smaller parts of the list.
+
+			</p>
+			<h4><b>MERGE SORT EXAMPLE</b></h4>
+			<p>
+			Based on a divide and conquer strategy:
+			<div >
+			    <li >list is divided into two halves (divide).</li>
+			    <li>each half is sorted independently (conquer).</li>
+			    <li>two halves are merged into a sorted sequence</li>
+			    <li>Split original list recursively until base case is reached</li>
+			  </div>
+				
+			</p>
+			<img src="{% static 'images/merge.PNG' %}">
+			<img src="">
+			<br>
+			<h4><b>Memoization </b></h4>
+			<p>
+				A common technique to speed up recursive algorithms is called memoization<br>
+			A memoized function stores (caches) results of previous calls.<br>
+			When the function is later called with the same parameters, it returns the stored result rather than recalculating it.<br>
+			Memoized functions are not allowed to have side-effects.
+			<div >
+			    <li >No screen output.</li>
+			    <li >No change of object attributes</li>
+			    <li >No global variables assignments</li>
+			  </div>
+			</p>
+			Memoization is usually implemented with hash tables<br>
+			Difficult space/time trade-off<br>
+			<h4><b>Memoization example</b></h4>
+
+			<img src="{% static 'images/memo.PNG' %}">
+		</div>
+		
+</div>
+ <footer class="footer col-lg-12 col-xm-12 col-sm-12" id="footer">
+  <br><b><h6>CONTACTS US ON :  </h6></b>
+    <b>
+      <a href="https://www.whatsapp" style="color: #25D366 "><i class="fab fa-whatsapp">&nbsp;WHATSAPP</i></a>  &nbsp;&nbsp;
+      <a href="https://www.facebook.com" style="color: #3b5999"><i class="fab fa-facebook-square">&nbsp;FACEBOOK</i></a> &nbsp;&nbsp;
+      <a href="https://www.twitter.com" style="color: #55acee" ><i class="fab fa-twitter-square">&nbsp;TWITTER</i></a> &nbsp;&nbsp;
+      <a href="https://www.linkedin.com " style=" color: #0077B5"><i class="fab fa-linkedin">&nbsp;LINKEDIN</i></a> &nbsp;&nbsp;
+      <!--<a href="https://www.instagram.com" style="color: #e4405f"><i class="fab fa-instagram"></i>&nbsp;INSTAGRAM</a>-->
+    </b>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &reg;All rights reserved,  &nbsp;&nbsp;  2018 &copy; Group 10 computer science, Datastructures and Algorithms.
+   
+  </footer>
+<!-- <script type="text/javascript" src="{% static 'bootstrap-4.1.1/dist/js/bootstrap.min.js'%}"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>  
+<script type="text/javascript" src="static/bootstrap.min.js.download"></script>
+<script type="text/javascript" src="static/jquery.min.js.download"></script>
+
